@@ -15,12 +15,12 @@ module "lb" {
     {
       name    = "neg-${var.app_name}-uswest"
       region  = "us-west2"
-      run_svc = "${var.app_name}-dev-pr6"
+      run_svc = "${var.app_name}-prod"
     },
     {
       name    = "neg-${var.app_name}-useast"
       region  = "us-east4"
-      run_svc = "${var.app_name}-dev-pr6"
+      run_svc = "${var.app_name}-prod"
     },
   ]
 }
